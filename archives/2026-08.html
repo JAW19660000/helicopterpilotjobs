@@ -34,7 +34,7 @@
   <div class="job-logo"><img src="https://static.wixstatic.com/media/4b137c_e40138f8a223458c962b4eb23eedf776~mv2.png/v1/fill/w_605,h_409,al_c,lg_1,q_85/4b137c_e40138f8a223458c962b4eb23eedf776~mv2.png" alt="Junior Mustering Pilot-Northern Territory, Katherine, Australia (Re-Post) logo" loading="lazy"></div>
   <div class="job-body">
     <h3 class="job-title">Junior Mustering Pilot-Northern Territory, Katherine, Australia (Re-Post)</h3>
-    <div class="job-meta">Northern Territory (Katherine, Australia) &middot; Posted 2026-08-01</div>
+    <div class="job-meta">Northern Territory (Katherine, Australia) &middot; Posted 2026-08-01 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
     <div class="job-full"><p>Full Time, Mustering, Pilot. To be negotiated. Monday, 29th of June 2026. Application Closes: TBA. About Us: HM Air is a locally owned and family-operated aviation company with bases strategically located across the Northern Territory. Operating to BARS and IOGP 590 standards, we are a leading provider of aviation and utility services to the pastoral, private, mining, oil and gas, government, and emergency response sectors throughout Northern Australia. Our rotary-wing fleet includes AS350, B206L, R44 and Cabri G2 helicopters, supporting a diverse range of operations in some of Australia's most remote and challenging environments. About the Role: HM Air is seeking a motivated and committed Junior Helicopter Pilot to join our Rotary Division. This position offers a unique opportunity to gain experience across a variety of operational environments while working alongside an experienced team of aviation professionals. The role requires flexibility, including travel and periods of working away from home base. HM Air offers a long-term career pathway with ongoing training, mentoring and professional development opportunities. Remuneration will be negotiated based on qualifications and experience. Please note that only candidates who meet the essential qualifications and experience requirements outlined below will be considered for this position. Essential Qualifications, Experience and Attributes: Australian CPL (H); 500 hours PIC; Minimum two years' experience in a ground crew, station hand or similar operational role; Sound knowledge and understanding of CASA regulations and aviation safety requirements; Strong communication and interpersonal skills; Self-motivated with the ability to work independently and prioritise tasks effectively; Strong customer service focus and professional presentation; Ability to work in remote environments and as part of a team. Desirable Qualifications, Experience and Attributes: Mustering endorsement and or experience; Cabri G2 Endorsement (or ability to obtain); CASA Drug and Alcohol Management Plan (DAMP) qualification; Dangerous Goods Awareness training; Human Factors training; Experience operating in remote or pastoral environments.</p></div>
     <div class="job-apply">Apply via email: <a href="mailto:jobs@hmair.com.au">jobs@hmair.com.au</a></div>
     
@@ -51,6 +51,7 @@
   <br><a href="../feed.xml">RSS feed</a>
 </footer>
 
+<script src="../counters.js"></script>
 <script>
 (function(){
   var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
@@ -65,6 +66,9 @@
   note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
   target.insertAdjacentElement("afterend", note);
   target.scrollIntoView({block: "start"});
+  if (window.jobCounterHit) {
+    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+  }
 })();
 </script>
 </body>

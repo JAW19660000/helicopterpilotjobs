@@ -138,6 +138,9 @@ h2.section-title {
   color: var(--muted);
   margin-bottom: 12px;
 }
+.job-views {
+  white-space: nowrap;
+}
 .job-excerpt {
   font-size: 0.95rem;
   color: var(--text);
