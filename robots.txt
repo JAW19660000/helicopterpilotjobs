@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jaw19660000.github.io/helicopterpilotjobs/sitemap.xml
