@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helicopter Pilot Jobs by Location — Australia, NZ, PNG, Indonesia, Fiji</title>
+<meta name="description" content="Browse helicopter pilot job listings by location: Australia, New Zealand, Papua New Guinea, Indonesia, Fiji and more across the Asia-Pacific region.">
+<link rel="canonical" href="https://jaw19660000.github.io/helicopterpilotjobs/tags/index.html">
+<link rel="stylesheet" href="../styles.css">
+<link rel="alternate" type="application/rss+xml" title="Helicopter Pilot Jobs" href="../feed.xml">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="site-title">Helicopter Pilot Jobs</p>
+    <p class="site-tagline">A rolling archive of helicopter pilot job listings across Australia, New Zealand and the wider Asia-Pacific region.</p>
+  </div>
+</header>
+
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html">Current Jobs</a>
+    <a href="../archives/index.html">Archives</a>
+    <a href="#" style="color:var(--accent)">Browse by Location</a>
+    <a href="../submit-ad.html">Submit a Job Ad</a>
+    <a href="../subscribe.html">Get Job Alerts</a>
+  </div>
+</nav>
+
+<main>
+
+<h2 class="section-title">Browse by Location</h2>
+<p>Helicopter pilot job listings grouped by country/region.</p>
+<div class="month-list">
+<a href="australia.html">Australia<span class="month-count">122 listings</span></a>
+<a href="new-zealand.html">New Zealand<span class="month-count">38 listings</span></a>
+<a href="png.html">Papua New Guinea<span class="month-count">20 listings</span></a>
+<a href="indonesia.html">Indonesia<span class="month-count">10 listings</span></a>
+<a href="fiji.html">Fiji<span class="month-count">1 listings</span></a>
+<a href="other-international.html">Other International<span class="month-count">14 listings</span></a>
+</div>
+
+</main>
+
+<footer>
+  Helicopter Pilot Jobs is a job listing information service only and is not affiliated with, and does not recruit or accept applications on behalf of, any company listed here. Apply directly using the contact details shown on each listing.
+  <br><a href="../feed.xml">RSS feed</a>
+</footer>
+
+<script src="../counters.js"></script>
+<script>
+(function(){
+  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
+  if (!hash) return;
+  var target = document.getElementById(hash);
+  if (!target || !target.classList.contains("job-card")) return;
+  document.querySelectorAll(".job-card").forEach(function(el){
+    if (el !== target) el.style.display = "none";
+  });
+  var note = document.createElement("p");
+  note.style.margin = "18px 0 0";
+  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
+  target.insertAdjacentElement("afterend", note);
+  target.scrollIntoView({block: "start"});
+  if (window.jobCounterHit) {
+    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+  }
+})();
+</script>
+</body>
+</html>
