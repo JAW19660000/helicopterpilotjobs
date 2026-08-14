@@ -50,13 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Utility Pilot Required-Queensland</h3>
     <div class="job-meta">Queensland &middot; Posted 2025-09-09 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>Executive Helicopters is one of Brisbanes premier helicopter operators. We have been operating out of Archerfield Airport for 15 years and new remote bases starting soon. Executive has SEQ's largest fleet of Airbus H125 and H130 helicopters. We conduct a wide range of operations including Fire Attack, Observation and Bombing, Flood work, External Load, Oil and Gas support, Power-lines patrols, Aerial photo and film, Aerial Incendiary, Charter and much more.</p><p>We are currently looking for a professional utility pilot to join our full time team. The ideal person will be based around SEQ, have previous utility experience, be able to operate independently and liaise with clients. The roster is full time and variable. Many of our contracts are 7/7 or 14/14 and some Mon-Fri work when at base.</p><p>Remuneration will be ABOVE award and industry standard for the correct person, dependant on previous experience. Call me on 1300 393 243 to discuss.</p><p>Our desired requirements are:
-- 2000 hours total
-- 500 turbine
-- 100 hours on AS350 and/or EC130
-- 100 hours Long Line Experience
-- Power-line Experience
-- Fire-ground Experience</p><p>The usual requirements like a CPL(H), DG, ASIC, Medical etc are of course a given. If you are looking for a long term role based in Brisbane, flying late model aircraft with a diverse work load and excellent remuneration conditions, please send your resume.</p></div>
+    <div class="job-full"><p>Executive Helicopters is one of Brisbanes premier helicopter operators. We have been operating out of Archerfield Airport for 15 years and new remote bases starting soon. Executive has SEQ's largest fleet of Airbus H125 and H130 helicopters. We conduct a wide range of operations including Fire Attack, Observation and Bombing, Flood work, External Load, Oil and Gas support, Power-lines patrols, Aerial photo and film, Aerial Incendiary, Charter and much more.</p><p>We are currently looking for a professional utility pilot to join our full time team. The ideal person will be based around SEQ, have previous utility experience, be able to operate independently and liaise with clients. The roster is full time and variable. Many of our contracts are 7/7 or 14/14 and some Mon-Fri work when at base.</p><p>Remuneration will be ABOVE award and industry standard for the correct person, dependant on previous experience. Call me on 1300 393 243 to discuss.</p><p>Our desired requirements are:<br>- 2000 hours total<br>- 500 turbine<br>- 100 hours on AS350 and/or EC130<br>- 100 hours Long Line Experience<br>- Power-line Experience<br>- Fire-ground Experience</p><p>The usual requirements like a CPL(H), DG, ASIC, Medical etc are of course a given. If you are looking for a long term role based in Brisbane, flying late model aircraft with a diverse work load and excellent remuneration conditions, please send your resume.</p></div>
     <div class="job-apply">Apply via email to <a href="mailto:brett@execheli.com.au">brett@execheli.com.au</a>, or call 1300 393 243</div>
     
   </div>
@@ -74,20 +68,11 @@
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "utility-pilot-required-queensland";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

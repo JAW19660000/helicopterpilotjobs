@@ -50,20 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Operations Manager / Senior Pilot-Queensland</h3>
     <div class="job-meta">Queensland &middot; Posted 2026-01-31 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>Heli-Central is looking for an Operations manager to join the team to help manage our aircraft fleet of utility aircraft flying operations across QLD and NSW. Along with organising and prepping aircraft fleet for tasks the day to day duties would include help keeping flight records, carrying out maintenance on role equipment, ground support trucks, cars and machinery.</p><p>Applicant must have or be able to obtain
-- CASA CPL-H
-- 1500 total time
-- 500 hours low level
-- ASIC
-- DG
-- CRM
-- Fly the wire environment
-- Class 2 medical
-- Prior people and equipment managing experience
-- Meet Casa requirements for Ops Manager</p><p>Preferred
-- Mustering or Ag experience
-- Aerial shooting experience
-- Remote operations experience</p><p>Position would suit a high time piston engine pilot that is looking to move into operation like fire fighting, sling, Ag and aerial shooting flying R44, R66, AS350 and Bell mediums.</p><p>Position is full-time live in Emerald, Qld with a 3 bedroom house provided onsite 10 minutes from town. Training would be provided to the right applicant.</p></div>
+    <div class="job-full"><p>Heli-Central is looking for an Operations manager to join the team to help manage our aircraft fleet of utility aircraft flying operations across QLD and NSW. Along with organising and prepping aircraft fleet for tasks the day to day duties would include help keeping flight records, carrying out maintenance on role equipment, ground support trucks, cars and machinery.</p><p>Applicant must have or be able to obtain<br>- CASA CPL-H<br>- 1500 total time<br>- 500 hours low level<br>- ASIC<br>- DG<br>- CRM<br>- Fly the wire environment<br>- Class 2 medical<br>- Prior people and equipment managing experience<br>- Meet Casa requirements for Ops Manager</p><p>Preferred<br>- Mustering or Ag experience<br>- Aerial shooting experience<br>- Remote operations experience</p><p>Position would suit a high time piston engine pilot that is looking to move into operation like fire fighting, sling, Ag and aerial shooting flying R44, R66, AS350 and Bell mediums.</p><p>Position is full-time live in Emerald, Qld with a 3 bedroom house provided onsite 10 minutes from town. Training would be provided to the right applicant.</p></div>
     <div class="job-apply">Apply via Facebook (facebook.com/HeliCentral)</div>
     
   </div>
@@ -81,20 +68,11 @@
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "operations-manager---senior-pilot-queensland";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

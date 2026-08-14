@@ -50,19 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Tourism Line Pilot – Northern Territory</h3>
     <div class="job-meta">Northern Territory &middot; Posted 2025-12-11 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>Professional Helicopter Services (PHS) is seeking applications for a position as Line Pilot at our Northern Territory Base. PHS is Australia's longest running helicopter flight school and operates a large fleet of helicopters on Charter and Airwork throughout Australia.</p><p>The Northern Territory Base conducts scenic flight operations from Uluru and Kings Canyon year round, operating a fleet of Bell 206 Jetrangers, Longrangers, and AS350 squirrels.</p><p>This position is offered as a full time role, live in Yulara, Northern Territory. PHS have shared accommodation available for the successful applicant however this may not be suitable for all. The right candidate has the potential to transition into the AS350 within six to eight months.</p><p>Minimum requirements:
-- CASA CPL (H) with current Class 1 Medical and current SEH FR
-- Gas Turbine Endorsement
-- 500 hours total time
-- Current ASIC
-- Current Dangerous Goods Certificate
-- Current Australian Full Drivers License
-- Australian Resident or right to live &amp; work in Australia</p><p>Desired:
-- Bell 206 and/or AS350 Experience
-- Tourism Experience
-- Dangerous Goods Drivers license
-- First Aid Certificate
-- Low Level Rating</p><p>Please submit all applications to: Attention: National Operations Manager.</p></div>
+    <div class="job-full"><p>Professional Helicopter Services (PHS) is seeking applications for a position as Line Pilot at our Northern Territory Base. PHS is Australia's longest running helicopter flight school and operates a large fleet of helicopters on Charter and Airwork throughout Australia.</p><p>The Northern Territory Base conducts scenic flight operations from Uluru and Kings Canyon year round, operating a fleet of Bell 206 Jetrangers, Longrangers, and AS350 squirrels.</p><p>This position is offered as a full time role, live in Yulara, Northern Territory. PHS have shared accommodation available for the successful applicant however this may not be suitable for all. The right candidate has the potential to transition into the AS350 within six to eight months.</p><p>Minimum requirements:<br>- CASA CPL (H) with current Class 1 Medical and current SEH FR<br>- Gas Turbine Endorsement<br>- 500 hours total time<br>- Current ASIC<br>- Current Dangerous Goods Certificate<br>- Current Australian Full Drivers License<br>- Australian Resident or right to live &amp; work in Australia</p><p>Desired:<br>- Bell 206 and/or AS350 Experience<br>- Tourism Experience<br>- Dangerous Goods Drivers license<br>- First Aid Certificate<br>- Low Level Rating</p><p>Please submit all applications to: Attention: National Operations Manager.</p></div>
     <div class="job-apply">Apply via email to <a href="mailto:jobs@phs.com.au">jobs@phs.com.au</a></div>
     
   </div>
@@ -80,20 +68,11 @@
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "tourism-line-pilot-northern-territory";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

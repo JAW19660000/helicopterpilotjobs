@@ -50,24 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Pilot Required-Queensland</h3>
     <div class="job-meta">Queensland &middot; Posted 2025-10-13 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>Zoom Helicopters is a growing, family owned and operated tourism business based in Cairns, Queensland, providing the top-rated scenic flights over the World Heritage listed Great Barrier Reef and surrounding area. We pride ourselves on being a tight-knit team where safety, customer service, and a positive attitude always come first.</p><p>We're looking for our next friendly, professional helicopter pilot to join our team. The ideal candidate will not only have a strong focus on safety, but also a warm, approachable personality – someone who enjoys meeting new people, creating memorable experiences for our customers, and working together as part of a supportive team.</p><p>What we're looking for:
-- Australian citizen or permanent resident
-- CPL-H
-- Minimum 700 hours total time
-- Turbine experience (essential)
-- Bell 206B/L experience (preferred)
-- Pontoon/ship landing experience (preferred)
-- Strong focus on safety and professionalism
-- A genuine people person with great customer service skills
-- Positive, can-do attitude and team player
-- ASIC
-- HUET certificate
-- DG Awareness certificate</p><p>What we offer:
-- Full-time position
-- Above award wage
-- Fixed base (great for family life)
-- Be a part of a close-knit, supportive team where your contribution really matters
-- Opportunity to fly in one of the world's most stunning places</p><p>If you're ready for an exciting new adventure with us at Zoom Helicopters, we welcome suitably qualified applicants to send CVs. Only shortlisted applicants will be contacted.</p></div>
+    <div class="job-full"><p>Zoom Helicopters is a growing, family owned and operated tourism business based in Cairns, Queensland, providing the top-rated scenic flights over the World Heritage listed Great Barrier Reef and surrounding area. We pride ourselves on being a tight-knit team where safety, customer service, and a positive attitude always come first.</p><p>We're looking for our next friendly, professional helicopter pilot to join our team. The ideal candidate will not only have a strong focus on safety, but also a warm, approachable personality – someone who enjoys meeting new people, creating memorable experiences for our customers, and working together as part of a supportive team.</p><p>What we're looking for:<br>- Australian citizen or permanent resident<br>- CPL-H<br>- Minimum 700 hours total time<br>- Turbine experience (essential)<br>- Bell 206B/L experience (preferred)<br>- Pontoon/ship landing experience (preferred)<br>- Strong focus on safety and professionalism<br>- A genuine people person with great customer service skills<br>- Positive, can-do attitude and team player<br>- ASIC<br>- HUET certificate<br>- DG Awareness certificate</p><p>What we offer:<br>- Full-time position<br>- Above award wage<br>- Fixed base (great for family life)<br>- Be a part of a close-knit, supportive team where your contribution really matters<br>- Opportunity to fly in one of the world's most stunning places</p><p>If you're ready for an exciting new adventure with us at Zoom Helicopters, we welcome suitably qualified applicants to send CVs. Only shortlisted applicants will be contacted.</p></div>
     <div class="job-apply">Apply via email to <a href="mailto:brenton.natalier@zoomhelicopters.com.au">brenton.natalier@zoomhelicopters.com.au</a></div>
     
   </div>
@@ -85,20 +68,11 @@
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "pilot-required-queensland-32";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

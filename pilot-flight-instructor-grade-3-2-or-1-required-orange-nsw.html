@@ -50,25 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Pilot/Flight Instructor (Grade 3, 2, or 1)Required-Orange, NSW</h3>
     <div class="job-meta">Orange, NSW &middot; Posted 2025-10-01 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>Role overview
-Orange Helicopters is seeking qualified flight instructors at all levels (Grade 3, Grade 2, or Grade 1) for a full time or part time position. The position offers a stable Monday–Friday schedule with occasional weekend work for scenic flights. Our fleet includes R22, R44, B206-L, B407, and AS350, providing diverse instructional opportunities and exposure to multiple rotor-craft platforms.</p><p>Key details
-- Position type: Permanent Full-time or Part time or Contract work available
-- Schedule: Monday–Friday; occasional weekends for scenic flights
-- Location: Orange Helicopters
-- Fleet: R22, R44, B206-L, B407, AS350
-- Career path: Opportunity to advance into utility work</p><p>Compensation
-- Salary commensurate with experience</p><p>Required minimums
-- Commercial Pilot License (Helicopters) CPL(H)
-- Class 1 medical
-- Grade 3 Flight Instructor Rating (FIR) or higher
-- Aviation Security Identification Card (ASIC)</p><p>Desirable qualifications
-- Low Level (H) endorsement
-- Aerial mustering helicopter (AMH)
-- Gas turbine endorsement (GTE)</p><p>What we offer
-- Clear pathways into utility roles and higher-level flight operations
-- Structured on-boarding and ongoing professional development
-- Competitive compensation aligned with experience and qualifications</p><p>How to apply
-Please submit your resume and a cover letter.</p></div>
+    <div class="job-full"><p>Role overview<br>Orange Helicopters is seeking qualified flight instructors at all levels (Grade 3, Grade 2, or Grade 1) for a full time or part time position. The position offers a stable Monday–Friday schedule with occasional weekend work for scenic flights. Our fleet includes R22, R44, B206-L, B407, and AS350, providing diverse instructional opportunities and exposure to multiple rotor-craft platforms.</p><p>Key details<br>- Position type: Permanent Full-time or Part time or Contract work available<br>- Schedule: Monday–Friday; occasional weekends for scenic flights<br>- Location: Orange Helicopters<br>- Fleet: R22, R44, B206-L, B407, AS350<br>- Career path: Opportunity to advance into utility work</p><p>Compensation<br>- Salary commensurate with experience</p><p>Required minimums<br>- Commercial Pilot License (Helicopters) CPL(H)<br>- Class 1 medical<br>- Grade 3 Flight Instructor Rating (FIR) or higher<br>- Aviation Security Identification Card (ASIC)</p><p>Desirable qualifications<br>- Low Level (H) endorsement<br>- Aerial mustering helicopter (AMH)<br>- Gas turbine endorsement (GTE)</p><p>What we offer<br>- Clear pathways into utility roles and higher-level flight operations<br>- Structured on-boarding and ongoing professional development<br>- Competitive compensation aligned with experience and qualifications</p><p>How to apply<br>Please submit your resume and a cover letter.</p></div>
     <div class="job-apply">Apply via email to <a href="mailto:dean@orangehelicopters.com.au">dean@orangehelicopters.com.au</a></div>
     
   </div>
@@ -86,20 +68,11 @@ Please submit your resume and a cover letter.</p></div>
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "pilot-flight-instructor-grade-3-2-or-1-required-orange-nsw";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

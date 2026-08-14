@@ -50,26 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Pilot Required-Mackay, Queensland</h3>
     <div class="job-meta">Mackay, Queensland &middot; Posted 2026-01-12 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>Flyon Helicopters
-Why Flyon?
-Flyon is an equal opportunity employer. We believe that diversity is a strength, and we are committed to creating an inclusive environment where all employees can thrive regardless of their background.</p><p>In preparation for both the growth of our Marine Pilot Transfer operations for Torres Pilots Pty Ltd in Mackay Queensland, and the introduction of our AW109 Grand New helicopters, we are currently seeking expressions of interest from suitably qualified pilots who would be interested in a IFR / Night HMPT Captain Positions.</p><p>AW109 Captains
-Mackay, Queensland</p><p>Interested applicants should preferably have previous experience in MPT and/or IFR Offshore support operations and hold an AW109 type endorsement with the following minimum qualifications:</p><p>About you
-Beyond your logbook, we are looking for professionals who embody the following:
-Decision Making: Exceptional sound judgment and initiative.
-Communication: Clear, concise, and professional communication skills.
-Teamwork: A collaborative mindset and the ability to build strong relationships with colleagues, clients, and stakeholders.</p><p>Essential (Technical)
-Captains:
-- Australian ATPL (H) or Australian CPL (H)
-- MEIR with a minimum of 3 renewals
-- NVFR Rating with 100 hours night PIC
-- 2500 hours Total
-- 1500 hours PIC
-- 500 hours PIC on multi-engine helicopters
-- 300 hours Turbine
-- 100 hours PIC on AW109 type or A109E (is preferable)
-- Current Huet / EBS certificate</p><p>Essential (Non-Technical)
-The right to live and work in Australia. Demonstrate understanding of and competency with CRM, Risk Management and Safety Management Systems. Demonstrate systems competencies with Excel and iPad flight planning software (e.g., OzRunways).</p><p>How to apply
-If you would like to be part of our progressive and dynamic company, please submit your current resume and a covering letter, addressing the essential criteria - please note this is not an entry level position. Candidates who are close to but do not meet the minimum requirements will be considered on a case by case basis.</p></div>
+    <div class="job-full"><p>Flyon Helicopters<br>Why Flyon?<br>Flyon is an equal opportunity employer. We believe that diversity is a strength, and we are committed to creating an inclusive environment where all employees can thrive regardless of their background.</p><p>In preparation for both the growth of our Marine Pilot Transfer operations for Torres Pilots Pty Ltd in Mackay Queensland, and the introduction of our AW109 Grand New helicopters, we are currently seeking expressions of interest from suitably qualified pilots who would be interested in a IFR / Night HMPT Captain Positions.</p><p>AW109 Captains<br>Mackay, Queensland</p><p>Interested applicants should preferably have previous experience in MPT and/or IFR Offshore support operations and hold an AW109 type endorsement with the following minimum qualifications:</p><p>About you<br>Beyond your logbook, we are looking for professionals who embody the following:<br>Decision Making: Exceptional sound judgment and initiative.<br>Communication: Clear, concise, and professional communication skills.<br>Teamwork: A collaborative mindset and the ability to build strong relationships with colleagues, clients, and stakeholders.</p><p>Essential (Technical)<br>Captains:<br>- Australian ATPL (H) or Australian CPL (H)<br>- MEIR with a minimum of 3 renewals<br>- NVFR Rating with 100 hours night PIC<br>- 2500 hours Total<br>- 1500 hours PIC<br>- 500 hours PIC on multi-engine helicopters<br>- 300 hours Turbine<br>- 100 hours PIC on AW109 type or A109E (is preferable)<br>- Current Huet / EBS certificate</p><p>Essential (Non-Technical)<br>The right to live and work in Australia. Demonstrate understanding of and competency with CRM, Risk Management and Safety Management Systems. Demonstrate systems competencies with Excel and iPad flight planning software (e.g., OzRunways).</p><p>How to apply<br>If you would like to be part of our progressive and dynamic company, please submit your current resume and a covering letter, addressing the essential criteria - please note this is not an entry level position. Candidates who are close to but do not meet the minimum requirements will be considered on a case by case basis.</p></div>
     <div class="job-apply">Apply through SEEK (job 89623607)</div>
     
   </div>
@@ -87,20 +68,11 @@ If you would like to be part of our progressive and dynamic company, please subm
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "pilot-required-mackay-queensland";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

@@ -50,33 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Pilots Required-Western Australia (Re-Post)</h3>
     <div class="job-meta">Western Australia &middot; Posted 2026-02-11 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>About us:
-Mount Hart Wilderness Lodge is a unique and highly remote outback destination in the Kimberley region. We're looking for experienced pilots to join our helicopter operation for the 2026 dry season.</p><p>The Role:
-As a Line Pilot, you will take Mount Hart guests on incredible adventures across the breathtaking West Kimberley region. Scenic helicopter tours include off-airport landings in spectacular Kimberley destinations.</p><p>As a Base Manager, you will manage helicopter maintenance and ensure the airwing operation runs seamlessly throughout the season. All Line Pilots and the Base Manager will fly R44 aircraft, ensuring the highest standard of safety, customer service, and professionalism.</p><p>Are you a fishing enthusiast with your pilot's licence? Turn your passion for fishing and flying into a once-in-a-lifetime role in the Kimberley. We're on the lookout for a Fishing Guide Pilot to join our team, delivering unforgettable remote fishing adventures by air. This is a hands-on, adventure-driven role combining piloting, guiding, and guest experience in one of Australia's most spectacular regions.</p><p>Key Responsibilities:
-Safely operate aircraft on helicopter tours across the West Kimberley region, including popular destinations such as Horizontal Falls, Bell Gorge, Isdell Gorge, Charnley Gorge, and Twin Flame Falls, including off-airport landings in remote the Kimberley. Conduct pre-flight inspections and daily reporting to ensure all aircraft are maintained to the highest standards. Provide exceptional customer service to passengers, ensuring a memorable, knowledgeable, and enjoyable experience. Collaborate with ground crew and other team members to ensure smooth operations. Adhere to all aviation regulations and company policies.</p><p>Essential Qualifications:
-- Commercial Pilots Licence (CPL)(H)
-- CASA Class 1 Medical Certificate
-- Remote flying experience
-- Aviation Security Identification Card (ASIC)
-- Current Single Engine Helicopter (SEH) Flight Review
-- Current Dangerous Goods Awareness Certificate
-- Gas Turbine Engine Rating
-- Desirable: Low Level Rating
-- Dangerous Goods Awareness Course
-- Proficient knowledge of Australian aviation legislation
-- High level of written and verbal communication skills
-- Driver's Licence (manual)
-- Excellent communication and interpersonal skills
-- Ability to work well under pressure and adapt to changing circumstances
-- Australian citizenship or appropriate work visa
-- Minimum Experience:
-  - Line Pilot: Minimum 500 flying hours (1,000+ desirable)
-  - Base Manager: Minimum 2,000 flying hours</p><p>Desirable Experience:
-- Instructor rating Grade 3 or higher
-- Helicopter Underwater Escape Training (HUET)
-- Low Level with Sling</p><p>Benefits:
-Competitive salary commensurate with experience. Seasonal work from May to October, offering flexibility during the off-season. Opportunity to fly over some of the most stunning landscapes in Australia. Collaborative and supportive work environment. Potential for career advancement within the company.</p><p>Application Process:
-To apply for the position, please submit your resume, cover letter, and copies of relevant licences and certifications.</p></div>
+    <div class="job-full"><p>About us:<br>Mount Hart Wilderness Lodge is a unique and highly remote outback destination in the Kimberley region. We're looking for experienced pilots to join our helicopter operation for the 2026 dry season.</p><p>The Role:<br>As a Line Pilot, you will take Mount Hart guests on incredible adventures across the breathtaking West Kimberley region. Scenic helicopter tours include off-airport landings in spectacular Kimberley destinations.</p><p>As a Base Manager, you will manage helicopter maintenance and ensure the airwing operation runs seamlessly throughout the season. All Line Pilots and the Base Manager will fly R44 aircraft, ensuring the highest standard of safety, customer service, and professionalism.</p><p>Are you a fishing enthusiast with your pilot's licence? Turn your passion for fishing and flying into a once-in-a-lifetime role in the Kimberley. We're on the lookout for a Fishing Guide Pilot to join our team, delivering unforgettable remote fishing adventures by air. This is a hands-on, adventure-driven role combining piloting, guiding, and guest experience in one of Australia's most spectacular regions.</p><p>Key Responsibilities:<br>Safely operate aircraft on helicopter tours across the West Kimberley region, including popular destinations such as Horizontal Falls, Bell Gorge, Isdell Gorge, Charnley Gorge, and Twin Flame Falls, including off-airport landings in remote the Kimberley. Conduct pre-flight inspections and daily reporting to ensure all aircraft are maintained to the highest standards. Provide exceptional customer service to passengers, ensuring a memorable, knowledgeable, and enjoyable experience. Collaborate with ground crew and other team members to ensure smooth operations. Adhere to all aviation regulations and company policies.</p><p>Essential Qualifications:<br>- Commercial Pilots Licence (CPL)(H)<br>- CASA Class 1 Medical Certificate<br>- Remote flying experience<br>- Aviation Security Identification Card (ASIC)<br>- Current Single Engine Helicopter (SEH) Flight Review<br>- Current Dangerous Goods Awareness Certificate<br>- Gas Turbine Engine Rating<br>- Desirable: Low Level Rating<br>- Dangerous Goods Awareness Course<br>- Proficient knowledge of Australian aviation legislation<br>- High level of written and verbal communication skills<br>- Driver's Licence (manual)<br>- Excellent communication and interpersonal skills<br>- Ability to work well under pressure and adapt to changing circumstances<br>- Australian citizenship or appropriate work visa<br>- Minimum Experience:<br>  - Line Pilot: Minimum 500 flying hours (1,000+ desirable)<br>  - Base Manager: Minimum 2,000 flying hours</p><p>Desirable Experience:<br>- Instructor rating Grade 3 or higher<br>- Helicopter Underwater Escape Training (HUET)<br>- Low Level with Sling</p><p>Benefits:<br>Competitive salary commensurate with experience. Seasonal work from May to October, offering flexibility during the off-season. Opportunity to fly over some of the most stunning landscapes in Australia. Collaborative and supportive work environment. Potential for career advancement within the company.</p><p>Application Process:<br>To apply for the position, please submit your resume, cover letter, and copies of relevant licences and certifications.</p></div>
     <div class="job-apply">Apply via email to <a href="mailto:jobs@mounthart.com.au">jobs@mounthart.com.au</a></div>
     
   </div>
@@ -94,20 +68,11 @@ To apply for the position, please submit your resume, cover letter, and copies o
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "pilots-required-western-australia-re-post";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>
