@@ -50,20 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">B206/R44/GA8 Charter/Tour Pilot – New Zealand</h3>
     <div class="job-meta">New Zealand &middot; Posted 2025-08-19 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>We are a tourism company based in the Bay of Islands. We operate a GA8 Airvan, an R44 II, and two B206L3 Longrangers.</p><p>We are looking for an experienced helicopter and fixed wing pilot to join our team. The candidate will have experience flying R44's, Longrangers and GA8 Airvan. The successful candidate will be responsible for safely operating our helicopter fleet and GA8 Airvan on both scenic tourism flights.</p><p>Responsibilities:
-- Fly R44, B206L3 and GA8 Airvan in accordance with Part 135
-- Provide excellent customer service to our clients
-- Perform pre-flight and post-flight inspections
-- Operate a tender boat</p><p>Qualifications:
-- 2500+ hours of flight experience
-- NZ CPL (H), NZ CPL (A)
-- Competence flying in a variety of weather conditions
-- Mechanically minded with some experience working on machinery under supervision
-- Ability to work independently and as part of a team
-- Excellent communication skills
-- Must hold a NZ Full Drivers licence and P endorsement
-- Must have a current standard First-Aid and CPR certificate
-- Hold a current coastguard day skipper course certificate</p><p>Remuneration to be discussed based on experience.</p></div>
+    <div class="job-full"><p>We are a tourism company based in the Bay of Islands. We operate a GA8 Airvan, an R44 II, and two B206L3 Longrangers.</p><p>We are looking for an experienced helicopter and fixed wing pilot to join our team. The candidate will have experience flying R44's, Longrangers and GA8 Airvan. The successful candidate will be responsible for safely operating our helicopter fleet and GA8 Airvan on both scenic tourism flights.</p><p>Responsibilities:<br>- Fly R44, B206L3 and GA8 Airvan in accordance with Part 135<br>- Provide excellent customer service to our clients<br>- Perform pre-flight and post-flight inspections<br>- Operate a tender boat</p><p>Qualifications:<br>- 2500+ hours of flight experience<br>- NZ CPL (H), NZ CPL (A)<br>- Competence flying in a variety of weather conditions<br>- Mechanically minded with some experience working on machinery under supervision<br>- Ability to work independently and as part of a team<br>- Excellent communication skills<br>- Must hold a NZ Full Drivers licence and P endorsement<br>- Must have a current standard First-Aid and CPR certificate<br>- Hold a current coastguard day skipper course certificate</p><p>Remuneration to be discussed based on experience.</p></div>
     <div class="job-apply">Apply via email with resume and cover letter to <a href="mailto:info@saltair.co.nz">info@saltair.co.nz</a></div>
     
   </div>
@@ -81,20 +68,11 @@
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "b206-r44-ga8-charter-tour-pilot-new-zealand";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

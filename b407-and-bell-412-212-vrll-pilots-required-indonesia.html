@@ -50,22 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">B407 and Bell 412/212 VRLL Pilots Required-Indonesia</h3>
     <div class="job-meta">Indonesia &middot; Posted 2026-02-09 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>SGI, an aviation company operating in Indonesia, is currently seeking experienced Rotary Wing Pilots for precision long-line (VRLL) operations on the B412/212 and B407 helicopter type. The successful candidate will be based in Indonesia and will need to meet the following minimum qualifications:</p><p>Requirement for Rotary Wing Pilots for B407 for precision long-line (VRLL) operations:
-1. Current CPL or ATPL License including a Class 1 Medical Certificate
-2. Minimum Flight Time in Command on B407 Helicopter Type - 300
-3. Minimum Total Flight Time – 3,000 hours
-4. Total Minimum Flight Time in Command in Helicopters – 1,500 hours
-5. Minimum Flight Time in Command in Role – min 300 hours: (External load operations 200 hours, &gt;200ft, VRLL 100 hours)
-6. High Altitude and Seismic Operations experience preferred
-7. The applicant is subject to passing the Heli SGI's Medical Examination standards
-8. Must have nil violation or accidents in the last five (5) years.</p><p>Requirement for Rotary Wing Pilots for B412/212 for precision long-line (VRLL) operations:
-1. Hold a current CPL or ATPL License, as well as a Class 1 Medical Certificate
-2. Possess a minimum of 2,500 total flight hours, which includes 1,500 hours total as pilot in command, 500 hours Multi-engine and 150 hours total on type.
-3. Have a minimum 200 hours of external load operations and 100 hours of VRLL operations.
-4. Previous experience in high altitude and seismic operations is preferred.
-5. The applicant must pass Heli SGI's Medical Examination standards.
-6. No violations or accidents in the last five (5) years are allowed.</p><p>About Us – Sayap Garuda Indah (SGi)
-At Sayap Garuda Indah (SGi), we're more than just a helicopter service provider — we're a team of professionals committed to connecting Indonesia's most remote regions through safe, efficient, and reliable aviation solutions. For over a decade, SGi has supported major clients in the mining &amp; exploration industry, tourism sector, and specialized logistics across the archipelago. Operating in some of the most challenging environments — from dense jungles to high mountain altitudes — we pride ourselves on precision, professionalism, and safety.</p><p>With over 130+ employees across various functions, SGi continues to grow as one of Indonesia's leading aviation companies. Our team includes talented individuals from diverse backgrounds: pilots, engineers, ground crew, operations, and corporate professionals — all working together with a shared mission. If you are passionate about aviation, excellence, and being part of a high-impact team, SGi is the place to take your career to new heights.</p><p>Head Office: Benoa Heliport Complex, Jl. Raya Pelabuhan Benoa, 80222 Pesanggaran, Bali – Indonesia. Learn more: www.sgi-aero.com</p></div>
+    <div class="job-full"><p>SGI, an aviation company operating in Indonesia, is currently seeking experienced Rotary Wing Pilots for precision long-line (VRLL) operations on the B412/212 and B407 helicopter type. The successful candidate will be based in Indonesia and will need to meet the following minimum qualifications:</p><p>Requirement for Rotary Wing Pilots for B407 for precision long-line (VRLL) operations:<br>1. Current CPL or ATPL License including a Class 1 Medical Certificate<br>2. Minimum Flight Time in Command on B407 Helicopter Type - 300<br>3. Minimum Total Flight Time – 3,000 hours<br>4. Total Minimum Flight Time in Command in Helicopters – 1,500 hours<br>5. Minimum Flight Time in Command in Role – min 300 hours: (External load operations 200 hours, &gt;200ft, VRLL 100 hours)<br>6. High Altitude and Seismic Operations experience preferred<br>7. The applicant is subject to passing the Heli SGI's Medical Examination standards<br>8. Must have nil violation or accidents in the last five (5) years.</p><p>Requirement for Rotary Wing Pilots for B412/212 for precision long-line (VRLL) operations:<br>1. Hold a current CPL or ATPL License, as well as a Class 1 Medical Certificate<br>2. Possess a minimum of 2,500 total flight hours, which includes 1,500 hours total as pilot in command, 500 hours Multi-engine and 150 hours total on type.<br>3. Have a minimum 200 hours of external load operations and 100 hours of VRLL operations.<br>4. Previous experience in high altitude and seismic operations is preferred.<br>5. The applicant must pass Heli SGI's Medical Examination standards.<br>6. No violations or accidents in the last five (5) years are allowed.</p><p>About Us – Sayap Garuda Indah (SGi)<br>At Sayap Garuda Indah (SGi), we're more than just a helicopter service provider — we're a team of professionals committed to connecting Indonesia's most remote regions through safe, efficient, and reliable aviation solutions. For over a decade, SGi has supported major clients in the mining &amp; exploration industry, tourism sector, and specialized logistics across the archipelago. Operating in some of the most challenging environments — from dense jungles to high mountain altitudes — we pride ourselves on precision, professionalism, and safety.</p><p>With over 130+ employees across various functions, SGi continues to grow as one of Indonesia's leading aviation companies. Our team includes talented individuals from diverse backgrounds: pilots, engineers, ground crew, operations, and corporate professionals — all working together with a shared mission. If you are passionate about aviation, excellence, and being part of a high-impact team, SGi is the place to take your career to new heights.</p><p>Head Office: Benoa Heliport Complex, Jl. Raya Pelabuhan Benoa, 80222 Pesanggaran, Bali – Indonesia. Learn more: www.sgi-aero.com</p></div>
     <div class="job-apply">Apply via email to <a href="mailto:talent.hub@sgi-aero.com">talent.hub@sgi-aero.com</a></div>
     
   </div>
@@ -83,20 +68,11 @@ At Sayap Garuda Indah (SGi), we're more than just a helicopter service provider 
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "b407-and-bell-412-212-vrll-pilots-required-indonesia";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

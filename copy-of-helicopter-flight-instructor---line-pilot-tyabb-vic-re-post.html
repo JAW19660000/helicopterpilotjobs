@@ -50,16 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Copy of Helicopter Flight Instructor / Line Pilot – Tyabb, VIC (Re-Post)</h3>
     <div class="job-meta">Tyabb, VIC &middot; Posted 2025-09-09 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>Minimum Requirements:
-- CASA Part 61 CPL(H) license
-- Grade 3 Flight Instructor Rating
-- Experience in R44 / B206 / H130
-- Eligible to live and work in Australia</p><p>Desirable Qualities:
-- Low-level
-- Experience with B206, H130
-- Approvals for GTE / low-level training
-- Strong ground-school instruction ability and knowledge of Part 141 aviation training legislation
-- Passionate, punctual, safety-focused and team-oriented</p><p>Update: We will be offering above-award remuneration for the right candidate, based on qualifications and experience.</p></div>
+    <div class="job-full"><p>Minimum Requirements:<br>- CASA Part 61 CPL(H) license<br>- Grade 3 Flight Instructor Rating<br>- Experience in R44 / B206 / H130<br>- Eligible to live and work in Australia</p><p>Desirable Qualities:<br>- Low-level<br>- Experience with B206, H130<br>- Approvals for GTE / low-level training<br>- Strong ground-school instruction ability and knowledge of Part 141 aviation training legislation<br>- Passionate, punctual, safety-focused and team-oriented</p><p>Update: We will be offering above-award remuneration for the right candidate, based on qualifications and experience.</p></div>
     <div class="job-apply">Apply via email with resume and cover letter to <a href="mailto:info@penheli.com.au">info@penheli.com.au</a></div>
     
   </div>
@@ -77,20 +68,11 @@
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "copy-of-helicopter-flight-instructor---line-pilot-tyabb-vic-re-post";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

@@ -68,20 +68,11 @@
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "eoi-for-experienced-b407-b212-b412-as332-and-h145-pilots-png";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>
