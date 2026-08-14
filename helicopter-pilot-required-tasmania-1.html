@@ -50,8 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Helicopter Pilot Required-Tasmania</h3>
     <div class="job-meta">Tasmania &middot; Posted 2025-10-25 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>Experienced Helicopter Pilot
-JMC Group is a Family owned and operated Company with sites and projects across all major cities in Tasmania and has been firmly embedded in the Tasmanian community for over three decades.</p><p>Based in Launceston Tasmania we are seeking an experienced pilot to command a new Airbus H-130. JMC who took delivery of a new aircraft a year ago, which is primarily used to fly Directors and the management team to and from Launceston, Hobart, Devonport and Burnie.</p><p>There is also some corporate flying via the Unique Charters banner for hotel guests from Silo and Seaport Hotel both of which are based in Launceston and are owned by JMC directors and partners.</p><p>There is an expectation that flying hours will be around 250/300 hours in the Airbus H-130 but potentially some hours in other aircraft. The successful applicant will need to be experienced in Turbine engine flying and a preference to be endorsed on a 130 machine.</p><p>The company will offer a Salary around $80,000 to $100,000 depending on experience and what they can bring to the group. JMC can also offer accommodation for a period and a discounted rate for an interstate applicant.</p></div>
+    <div class="job-full"><p>Experienced Helicopter Pilot<br>JMC Group is a Family owned and operated Company with sites and projects across all major cities in Tasmania and has been firmly embedded in the Tasmanian community for over three decades.</p><p>Based in Launceston Tasmania we are seeking an experienced pilot to command a new Airbus H-130. JMC who took delivery of a new aircraft a year ago, which is primarily used to fly Directors and the management team to and from Launceston, Hobart, Devonport and Burnie.</p><p>There is also some corporate flying via the Unique Charters banner for hotel guests from Silo and Seaport Hotel both of which are based in Launceston and are owned by JMC directors and partners.</p><p>There is an expectation that flying hours will be around 250/300 hours in the Airbus H-130 but potentially some hours in other aircraft. The successful applicant will need to be experienced in Turbine engine flying and a preference to be endorsed on a 130 machine.</p><p>The company will offer a Salary around $80,000 to $100,000 depending on experience and what they can bring to the group. JMC can also offer accommodation for a period and a discounted rate for an interstate applicant.</p></div>
     <div class="job-apply">Apply via email to <a href="mailto:positions@jmc.com.au">positions@jmc.com.au</a> (attention: Managing Director of JMC)</div>
     
   </div>
@@ -69,20 +68,11 @@ JMC Group is a Family owned and operated Company with sites and projects across 
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "helicopter-pilot-required-tasmania-1";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

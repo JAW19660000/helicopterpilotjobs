@@ -50,13 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Helicopter Flight Instructors-NSW</h3>
     <div class="job-meta">NSW &middot; Posted 2025-10-24 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>Aeropower is a leader in airborne electrical infrastructure, Maintenance and construction throughout Australia and internationally. We also operate two busy flight schools in Redcliffe, QLD and Bankstown, NSW.</p><p>We have an opening for Flight Instructors to join our busy flying school based at Bankstown Aerodrome, NSW. Part time and casual positions are available. This position involves regular weekend work.</p><p>Minimum Requirements:
-- CASA Flight Instructor rating with Grade 1, 2 or 3 training endorsement.
-- Current Class 1 aviation medical.
-- Current ASIC.</p><p>Preferred:
-- Cabri G2 experience
-- Low Level Training Endorsement
-- Experience operating independently without direct supervision (G2 and G1).</p><p>The ideal candidate is motivated and enthusiastic about training and passing on their knowledge and skills to the next generation of pilots. A firm grasp of the rules, regulations and CPL(H) theory knowledge is essential.</p><p>Applications via seek or to hoo@aeropower.com.au</p></div>
+    <div class="job-full"><p>Aeropower is a leader in airborne electrical infrastructure, Maintenance and construction throughout Australia and internationally. We also operate two busy flight schools in Redcliffe, QLD and Bankstown, NSW.</p><p>We have an opening for Flight Instructors to join our busy flying school based at Bankstown Aerodrome, NSW. Part time and casual positions are available. This position involves regular weekend work.</p><p>Minimum Requirements:<br>- CASA Flight Instructor rating with Grade 1, 2 or 3 training endorsement.<br>- Current Class 1 aviation medical.<br>- Current ASIC.</p><p>Preferred:<br>- Cabri G2 experience<br>- Low Level Training Endorsement<br>- Experience operating independently without direct supervision (G2 and G1).</p><p>The ideal candidate is motivated and enthusiastic about training and passing on their knowledge and skills to the next generation of pilots. A firm grasp of the rules, regulations and CPL(H) theory knowledge is essential.</p><p>Applications via seek or to hoo@aeropower.com.au</p></div>
     <div class="job-apply">Apply via SEEK (job 88081031) or email <a href="mailto:hoo@aeropower.com.au">hoo@aeropower.com.au</a></div>
     
   </div>
@@ -74,20 +68,11 @@
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "helicopter-flight-instructors-nsw";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

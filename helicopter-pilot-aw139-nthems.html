@@ -50,28 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Helicopter Pilot AW139 (NTHEMS)</h3>
     <div class="job-meta">Not specified &middot; Posted 2026-01-30 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>Competitive remuneration + salary packaging
-- Permanent, full-time position
-- Darwin base</p><p>CareFlight is an Australian "for purpose" aeromedical organisation voted consistently as one of Australia's most trusted Brands. Our mission is to save lives, speed recovery and serve the community through delivering our charitable social purpose.</p><p>Proudly a 2023 HRD 5 Star Employer of Choice, we operate across Australia, with major base locations in NSW, and the NT. Our specially trained doctors, nurses, and aircrew use helicopters, turbo prop aircraft, aeromedical jets and patient transport vehicles to provide critical support to over 8,500 patients each year. We also deploy medical professionals and aircraft in support of defence, government and commercial contracts, and energy and resource sector sites.</p><p>The role
-We are currently seeking an EOI for a Fixed Based AW139 Captain position in our Northern Operations, located in Darwin. Applicants will also be required to travel occasionally to support CareFlight Operations at other nominated locations and to attend training events. It is a requirement for applicants to reside or be willing to reside in Darwin and who meet the following essential and desirable criteria:</p><p>Essential Technical Skills
-The following PIC minimums are set for operations by both day and night, and must be logged in the pilot's personal flying log book:
-- CPL (H);
-- An AW139 Type rating and experience;
-- 2500 flying hours helicopters;
-- 1500 flying hours Pilot-in-Command (PIC) on helicopters;
-- 1200 flying hours PIC turbine engines;
-- 500 flying hours PIC on multi-engine helicopters;
-- 100 flying hours IFR on helicopters;
-- 100 flying hours PIC NVIS on helicopters;
-- Instrument Rating &amp; 2 renewals; MEH, IAP 2D, IAP 3D;
-- Night Vision Imaging System - G1; and
-- Low Level H – Winch.</p><p>Essential Non-Technical Skills
-- Demonstrated experience working in small specialist teams.
-- Demonstrated understanding of and competency with CRM, Risk Management and Safety Management Systems.
-- Demonstrated ability and willingness to take on non-flying related secondary duties.
-- Demonstrated competencies with computing systems such as Word, Excel, and iPad Flight Planning applications.</p><p>Desirable
-- Aircraft and operational ratings and endorsements: ATPL (H); Current HUET certificate; Current DG certificate; Northern Territory (or similar) experience.</p><p>How to apply
-If you would like to be part of our team, you can apply using the link below. Please ensure you attach a current resume and covering letter that addresses the role's essential criteria. Applications for this opportunity will close on 15th March 2026.</p><p>CareFlight values diversity in the workplace. Aboriginal and Torres Strait Islanders are encouraged to apply. All employees must comply with CareFlight's Drug and Alcohol Management Plan (DAMP) as required by CASA and may be subject to random workplace testing. Criminal Record and Working with Children Checks also apply.</p></div>
+    <div class="job-full"><p>Competitive remuneration + salary packaging<br>- Permanent, full-time position<br>- Darwin base</p><p>CareFlight is an Australian "for purpose" aeromedical organisation voted consistently as one of Australia's most trusted Brands. Our mission is to save lives, speed recovery and serve the community through delivering our charitable social purpose.</p><p>Proudly a 2023 HRD 5 Star Employer of Choice, we operate across Australia, with major base locations in NSW, and the NT. Our specially trained doctors, nurses, and aircrew use helicopters, turbo prop aircraft, aeromedical jets and patient transport vehicles to provide critical support to over 8,500 patients each year. We also deploy medical professionals and aircraft in support of defence, government and commercial contracts, and energy and resource sector sites.</p><p>The role<br>We are currently seeking an EOI for a Fixed Based AW139 Captain position in our Northern Operations, located in Darwin. Applicants will also be required to travel occasionally to support CareFlight Operations at other nominated locations and to attend training events. It is a requirement for applicants to reside or be willing to reside in Darwin and who meet the following essential and desirable criteria:</p><p>Essential Technical Skills<br>The following PIC minimums are set for operations by both day and night, and must be logged in the pilot's personal flying log book:<br>- CPL (H);<br>- An AW139 Type rating and experience;<br>- 2500 flying hours helicopters;<br>- 1500 flying hours Pilot-in-Command (PIC) on helicopters;<br>- 1200 flying hours PIC turbine engines;<br>- 500 flying hours PIC on multi-engine helicopters;<br>- 100 flying hours IFR on helicopters;<br>- 100 flying hours PIC NVIS on helicopters;<br>- Instrument Rating &amp; 2 renewals; MEH, IAP 2D, IAP 3D;<br>- Night Vision Imaging System - G1; and<br>- Low Level H – Winch.</p><p>Essential Non-Technical Skills<br>- Demonstrated experience working in small specialist teams.<br>- Demonstrated understanding of and competency with CRM, Risk Management and Safety Management Systems.<br>- Demonstrated ability and willingness to take on non-flying related secondary duties.<br>- Demonstrated competencies with computing systems such as Word, Excel, and iPad Flight Planning applications.</p><p>Desirable<br>- Aircraft and operational ratings and endorsements: ATPL (H); Current HUET certificate; Current DG certificate; Northern Territory (or similar) experience.</p><p>How to apply<br>If you would like to be part of our team, you can apply using the link below. Please ensure you attach a current resume and covering letter that addresses the role's essential criteria. Applications for this opportunity will close on 15th March 2026.</p><p>CareFlight values diversity in the workplace. Aboriginal and Torres Strait Islanders are encouraged to apply. All employees must comply with CareFlight's Drug and Alcohol Management Plan (DAMP) as required by CASA and may be subject to random workplace testing. Criminal Record and Working with Children Checks also apply.</p></div>
     <div class="job-apply">Apply via link (employmenthero.com); additional info contact <a href="mailto:recruitment@careflight.org">recruitment@careflight.org</a></div>
     
   </div>
@@ -89,20 +68,11 @@ If you would like to be part of our team, you can apply using the link below. Pl
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "helicopter-pilot-aw139-nthems";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

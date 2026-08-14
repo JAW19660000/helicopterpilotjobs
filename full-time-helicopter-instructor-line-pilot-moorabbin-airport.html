@@ -50,22 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Full-Time Helicopter Instructor/Line Pilot - Moorabbin Airport</h3>
     <div class="job-meta">Moorabbin Airport &middot; Posted 2025-12-11 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>The Helicopter Group has an exciting opportunity for a Full Time Grade 3 Instructor/Line Pilot to join our organisation at Moorabbin Airport Victoria. Established in 1994 our fleet includes H130, H125/AS350, B407, B206, R44 and H300. Our clientele consists primarily of flight training and charter/aerial work.</p><p>Required Skills &amp; Qualifications
-Minimum Qualifications:
-- CASA Part 61 CPL(H) license
-- Grade 3 Instructor Rating
-- Class 1 Medical
-- Current ASIC &amp; Dangerous Goods
-- Proficiency in Part 141 legislation
-- Current legal right to work in Australia</p><p>Desirable Qualifications:
-- Turbine experience
-- Grade 1 or 2 Instructor Rating
-- H300 experience
-- R44, B206, B407, H130, H125/AS350
-- Gas Turbine Endorsement
-- Low Level Training Endorsement
-- Design Feature Training Endorsement</p><p>Remuneration
-Salary will be at or above award based on experience and qualifications.</p><p>Note: Please do not apply if you do not already hold a Flight Instructor Rating.</p></div>
+    <div class="job-full"><p>The Helicopter Group has an exciting opportunity for a Full Time Grade 3 Instructor/Line Pilot to join our organisation at Moorabbin Airport Victoria. Established in 1994 our fleet includes H130, H125/AS350, B407, B206, R44 and H300. Our clientele consists primarily of flight training and charter/aerial work.</p><p>Required Skills &amp; Qualifications<br>Minimum Qualifications:<br>- CASA Part 61 CPL(H) license<br>- Grade 3 Instructor Rating<br>- Class 1 Medical<br>- Current ASIC &amp; Dangerous Goods<br>- Proficiency in Part 141 legislation<br>- Current legal right to work in Australia</p><p>Desirable Qualifications:<br>- Turbine experience<br>- Grade 1 or 2 Instructor Rating<br>- H300 experience<br>- R44, B206, B407, H130, H125/AS350<br>- Gas Turbine Endorsement<br>- Low Level Training Endorsement<br>- Design Feature Training Endorsement</p><p>Remuneration<br>Salary will be at or above award based on experience and qualifications.</p><p>Note: Please do not apply if you do not already hold a Flight Instructor Rating.</p></div>
     <div class="job-apply">Apply via email to <a href="mailto:info@helicoptergroup.com">info@helicoptergroup.com</a></div>
     
   </div>
@@ -83,20 +68,11 @@ Salary will be at or above award based on experience and qualifications.</p><p>N
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "full-time-helicopter-instructor-line-pilot-moorabbin-airport";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>

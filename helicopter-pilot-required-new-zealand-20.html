@@ -50,24 +50,7 @@
   <div class="job-body">
     <h3 class="job-title">Helicopter Pilot Required-New Zealand</h3>
     <div class="job-meta">New Zealand &middot; Posted 2025-11-21 &middot; <span class="job-views">&#128065; <span class="view-count-num">&hellip;</span> views</span></div>
-    <div class="job-full"><p>We're looking for a skilled and personable tourism helicopter pilot to join our team. This is a rare opportunity to fly in one of the most breathtaking regions in the world, delivering premium scenic experiences across Queenstown, Fiordland, Milford Sound, Earnslaw Burn and beyond.</p><p>We operate in a fast-paced, guest-focused environment with a strong commitment to safety, professionalism, and unforgettable experiences. You'll need to be confident flying in mountainous terrain, experienced in tourism operations, and ready to be an integral part of a tight-knit team.</p><p>The successful applicant will have:
-- New Zealand citizenship/residency or the legal right to work in New Zealand
-- Availability to work every weekend, public holidays and during peak season (Dec-Mar)
-- Excellent communication and prioritisation skills
-- Strong teamwork and adaptability
-- A positive, personable, and professional character</p><p>Minimum requirements:
-- NZ CPL(H) and current Class 1 medical
-- Rated on AS350
-- Proven mountain flying experience
-- Ability to work every weekend on a 5 on and 2 off roster</p><p>Required or able to obtain the following certifications/licenses:
-- Current First Aid certificate
-- CAA Dangerous Goods certification
-- NZ Class 1 driver's licence
-- NZTA Dangerous Goods endorsement</p><p>What we offer:
-- Full-time, Queenstown or Glenorchy based role with variety and flexibility
-- Competitive pay and professional development opportunities
-- Access to exclusive landing locations and high-end client experiences
-- A collaborative, passionate team culture with a strong focus on safety and guest service</p><p>If you're ready to fly in one of the world's most iconic aviation environments and deliver premium tourism experiences, we'd love to hear from you.</p></div>
+    <div class="job-full"><p>We're looking for a skilled and personable tourism helicopter pilot to join our team. This is a rare opportunity to fly in one of the most breathtaking regions in the world, delivering premium scenic experiences across Queenstown, Fiordland, Milford Sound, Earnslaw Burn and beyond.</p><p>We operate in a fast-paced, guest-focused environment with a strong commitment to safety, professionalism, and unforgettable experiences. You'll need to be confident flying in mountainous terrain, experienced in tourism operations, and ready to be an integral part of a tight-knit team.</p><p>The successful applicant will have:<br>- New Zealand citizenship/residency or the legal right to work in New Zealand<br>- Availability to work every weekend, public holidays and during peak season (Dec-Mar)<br>- Excellent communication and prioritisation skills<br>- Strong teamwork and adaptability<br>- A positive, personable, and professional character</p><p>Minimum requirements:<br>- NZ CPL(H) and current Class 1 medical<br>- Rated on AS350<br>- Proven mountain flying experience<br>- Ability to work every weekend on a 5 on and 2 off roster</p><p>Required or able to obtain the following certifications/licenses:<br>- Current First Aid certificate<br>- CAA Dangerous Goods certification<br>- NZ Class 1 driver's licence<br>- NZTA Dangerous Goods endorsement</p><p>What we offer:<br>- Full-time, Queenstown or Glenorchy based role with variety and flexibility<br>- Competitive pay and professional development opportunities<br>- Access to exclusive landing locations and high-end client experiences<br>- A collaborative, passionate team culture with a strong focus on safety and guest service</p><p>If you're ready to fly in one of the world's most iconic aviation environments and deliver premium tourism experiences, we'd love to hear from you.</p></div>
     <div class="job-apply">Apply through SEEK (job 88681399)</div>
     
   </div>
@@ -85,20 +68,11 @@
 <script src="counters.js"></script>
 <script>
 (function(){
-  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
-  if (!hash) return;
-  var target = document.getElementById(hash);
-  if (!target || !target.classList.contains("job-card")) return;
-  document.querySelectorAll(".job-card").forEach(function(el){
-    if (el !== target) el.style.display = "none";
-  });
-  var note = document.createElement("p");
-  note.style.margin = "18px 0 0";
-  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
-  target.insertAdjacentElement("afterend", note);
-  target.scrollIntoView({block: "start"});
+  var slug = "helicopter-pilot-required-new-zealand-20";
+  var card = document.getElementById(slug);
+  var numEl = card ? card.querySelector(".view-count-num") : null;
   if (window.jobCounterHit) {
-    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+    window.jobCounterHit(slug, numEl);
   }
 })();
 </script>
