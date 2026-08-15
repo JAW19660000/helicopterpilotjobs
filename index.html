@@ -306,6 +306,10 @@ if ("serviceWorker" in navigator) {
     <p style="margin-top:28px;"><a href="archives/index.html">Browse the full 12-month archive &rarr;</a> &middot; <a href="tags/index.html">Browse by location &rarr;</a></p>
   </div>
   <aside class="home-sidebar">
+    <div class="weather-widget">
+      <h2 class="section-title">Local Weather</h2>
+      <div id="weather-content" class="weather-loading">Detecting your location&hellip;</div>
+    </div>
     
 <h2 class="section-title">Useful Links</h2>
 <div class="useful-links">
@@ -317,6 +321,7 @@ if ("serviceWorker" in navigator) {
 
   </aside>
 </div>
+<script src="weather.js"></script>
 
 </main>
 

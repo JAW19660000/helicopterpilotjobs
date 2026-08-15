@@ -303,6 +303,61 @@ h2.section-title {
 .home-sidebar h2.section-title {
   margin-top: 0;
 }
+.weather-widget {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+}
+.weather-location {
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+}
+.weather-day-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.weather-day-row:first-of-type {
+  border-top: none;
+}
+.weather-day-label {
+  flex: 0 0 66px;
+  color: var(--navy);
+  font-weight: 600;
+}
+.weather-day-icon {
+  flex: 0 0 22px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.weather-day-temp {
+  flex: 1;
+  text-align: right;
+  color: var(--muted);
+}
+.weather-day-rain {
+  flex: 0 0 60px;
+  text-align: right;
+  color: #1b7a9c;
+  font-size: 0.78rem;
+}
+.weather-source {
+  margin: 10px 0 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: right;
+}
+.weather-loading, .weather-error {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
 footer {
   text-align: center;
   padding: 24px 20px 40px;

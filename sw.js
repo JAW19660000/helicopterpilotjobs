@@ -1,4 +1,4 @@
-const CACHE_NAME = "hpj-cache-v1";
+const CACHE_NAME = "hpj-cache-v2";
 const CORE_ASSETS = ["styles.css", "counters.js", "icon-192.png", "icon-512.png", "index.html"];
 
 self.addEventListener("install", function(event) {
