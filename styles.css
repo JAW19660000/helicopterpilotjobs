@@ -78,8 +78,8 @@ main {
   align-items: start;
 }
 .home-main { order: 1; }
-.home-sidebar-left { order: 2; }
-.home-sidebar-right { order: 3; }
+.home-sidebar-right { order: 2; }
+.home-sidebar-left { order: 3; }
 @media (min-width: 981px) {
   .home-layout {
     grid-template-columns: 220px 1fr 240px;
