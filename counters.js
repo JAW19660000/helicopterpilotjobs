@@ -1,4 +1,16 @@
 (function(){
+  var gaScript = document.createElement("script");
+  gaScript.async = true;
+  gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-XX2ZMC2GDM";
+  document.head.appendChild(gaScript);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag("js", new Date());
+  gtag("config", "G-XX2ZMC2GDM");
+})();
+
+(function(){
   var NS = "jaw19660000-helicopterpilotjobs";
   var API = "https://abacus.jasoncameron.dev";
 
