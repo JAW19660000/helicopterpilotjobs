@@ -81,3 +81,99 @@
     }
   });
 })();
+
+(function(){
+  var STORAGE_KEY = "hpj_saved_jobs";
+
+  function getSaved(){
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) { return []; }
+  }
+
+  function setSaved(list){
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(list)); } catch (e) {}
+  }
+
+  function isSaved(slug){ return getSaved().indexOf(slug) !== -1; }
+
+  function toggleSaved(slug){
+    var list = getSaved();
+    var idx = list.indexOf(slug);
+    if (idx === -1) { list.push(slug); } else { list.splice(idx, 1); }
+    setSaved(list);
+    return list.indexOf(slug) !== -1;
+  }
+
+  function updateAllBadges(){
+    var count = getSaved().length;
+    document.querySelectorAll(".saved-jobs-badge").forEach(function(b){
+      b.textContent = count;
+    });
+  }
+
+  function buttonLabel(saved){
+    return saved ? "★ Saved" : "☆ Save";
+  }
+
+  document.querySelectorAll(".job-card").forEach(function(card){
+    var slug = card.id;
+    if (!slug) return;
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "save-btn" + (isSaved(slug) ? " saved" : "");
+    btn.setAttribute("aria-label", "Save this job to view later");
+    btn.innerHTML = buttonLabel(isSaved(slug));
+    btn.addEventListener("click", function(){
+      var nowSaved = toggleSaved(slug);
+      btn.className = "save-btn" + (nowSaved ? " saved" : "");
+      btn.innerHTML = buttonLabel(nowSaved);
+      updateAllBadges();
+    });
+    card.appendChild(btn);
+  });
+
+  var navInner = document.querySelector(".site-nav .nav-inner");
+  if (navInner) {
+    var link = document.createElement("a");
+    link.href = "#saved-jobs";
+    link.id = "saved-jobs-nav-link";
+    var savedLabel = 'Saved Jobs <span class="saved-jobs-badge">' + getSaved().length + '</span>';
+    var allLabel = 'Show All Jobs <span class="saved-jobs-badge">' + getSaved().length + '</span>';
+    link.innerHTML = savedLabel;
+
+    link.addEventListener("click", function(e){
+      e.preventDefault();
+      var showingSaved = document.body.classList.toggle("showing-saved-only");
+      var cards = document.querySelectorAll(".job-card");
+      var msg = document.getElementById("saved-jobs-empty-msg");
+
+      if (showingSaved) {
+        var anySaved = false;
+        cards.forEach(function(c){
+          if (isSaved(c.id)) { c.style.display = ""; anySaved = true; }
+          else { c.style.display = "none"; }
+        });
+        link.innerHTML = allLabel;
+        if (!anySaved) {
+          if (!msg) {
+            msg = document.createElement("p");
+            msg.id = "saved-jobs-empty-msg";
+            msg.className = "saved-jobs-empty";
+            msg.textContent = "No saved jobs on this page yet. Look for the ☆ Save button on any listing.";
+            var grid = document.querySelector(".job-grid");
+            if (grid) grid.insertAdjacentElement("beforebegin", msg);
+          }
+        }
+      } else {
+        cards.forEach(function(c){ c.style.display = ""; });
+        link.innerHTML = savedLabel;
+        if (msg) msg.remove();
+      }
+      updateAllBadges();
+    });
+
+    navInner.appendChild(link);
+  }
+})();

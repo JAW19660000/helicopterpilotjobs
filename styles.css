@@ -451,3 +451,57 @@ footer {
   color: var(--muted);
   margin: 6px 0 0;
 }
+.job-card {
+  position: relative;
+}
+.job-title {
+  padding-right: 84px;
+}
+.save-btn {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.save-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.save-btn.saved {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: #fdf3ea;
+}
+#saved-jobs-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.saved-jobs-badge {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 1px 7px;
+  min-width: 14px;
+  text-align: center;
+  display: inline-block;
+}
+.saved-jobs-empty {
+  background: #fff7ea;
+  border: 1px solid #f0d9ad;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 0.88rem;
+  color: #6b5220;
+  margin: 18px 0 0;
+}
