@@ -394,3 +394,60 @@ footer {
   border-radius: 20px;
   vertical-align: middle;
 }
+.featured-job-banner {
+  position: relative;
+  background: #fff;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  padding: 20px 24px 18px;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.featured-job-tag {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+.featured-job-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--navy);
+  margin: 0 0 4px;
+}
+.featured-job-text {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+  max-width: 480px;
+}
+.featured-job-cta {
+  text-align: center;
+  flex-shrink: 0;
+}
+.featured-job-button {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.featured-job-note {
+  font-size: 0.74rem;
+  color: var(--muted);
+  margin: 6px 0 0;
+}
