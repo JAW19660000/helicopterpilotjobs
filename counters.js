@@ -177,3 +177,25 @@
     navInner.appendChild(link);
   }
 })();
+
+(function(){
+  if (document.getElementById("aircraft-nav-link")) return;
+  var navInner = document.querySelector(".site-nav .nav-inner");
+  if (!navInner) return;
+  var path = window.location.pathname.replace(/^\/helicopterpilotjobs\//, "");
+  var depth = (path.match(/\//g) || []).length;
+  var prefix = "../".repeat(depth);
+  var link = document.createElement("a");
+  link.id = "aircraft-nav-link";
+  link.href = prefix + "aircraft/index.html";
+  link.textContent = "Browse by Aircraft";
+  var locLink = null;
+  navInner.querySelectorAll("a").forEach(function(a){
+    if (a.textContent.trim() === "Browse by Location") locLink = a;
+  });
+  if (locLink) {
+    locLink.insertAdjacentElement("afterend", link);
+  } else {
+    navInner.appendChild(link);
+  }
+})();

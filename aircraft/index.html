@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helicopter Pilot Jobs by Aircraft Type</title>
+<meta name="description" content="Browse helicopter pilot job listings by aircraft type: AW139, AS350 Squirrel, H145, R44, Bell 412 and more across Australia, NZ and the Asia-Pacific.">
+<link rel="canonical" href="https://jaw19660000.github.io/helicopterpilotjobs/aircraft/index.html">
+<link rel="stylesheet" href="../styles.css">
+<link rel="alternate" type="application/rss+xml" title="Helicopter Pilot Jobs" href="../feed.xml">
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#0b2545">
+<link rel="icon" href="../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Heli Jobs">
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function(){
+    navigator.serviceWorker.register("../sw.js").catch(function(){});
+  });
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="site-title">Helicopter Pilot Jobs</p>
+    <p class="site-tagline">A rolling archive of helicopter pilot job listings across Australia, New Zealand and the wider Asia-Pacific region.</p>
+  </div>
+</header>
+
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html">Current Jobs</a>
+    <a href="../archives/index.html">Archives</a>
+    <a href="../tags/index.html">Browse by Location</a>
+    <a href="index.html" id="aircraft-nav-link" style="color:var(--accent)">Browse by Aircraft</a>
+    <a href="../submit-ad.html">Submit a Job Ad</a>
+    <a href="../subscribe.html">Get Job Alerts</a>
+    <a href="../get-the-app.html">Get the App</a>
+  </div>
+</nav>
+
+<main>
+
+<h2 class="section-title">Browse by Aircraft Type</h2>
+<p>Helicopter pilot job listings grouped by aircraft type. Only listings that mention a specific aircraft type in the ad are included here &mdash; browse <a href="../index.html">Current Jobs</a> or the <a href="../archives/index.html">Archives</a> to see everything.</p>
+<div class="month-list">
+<a href="as350-squirrel.html">AS350 / Squirrel<span class="month-count">42 listings</span></a>
+<a href="r44.html">R44<span class="month-count">34 listings</span></a>
+<a href="h145-bk117.html">H145 / BK117<span class="month-count">33 listings</span></a>
+<a href="bell-206.html">Bell 206<span class="month-count">27 listings</span></a>
+<a href="aw139.html">AW139<span class="month-count">26 listings</span></a>
+<a href="bell-412.html">Bell 412<span class="month-count">26 listings</span></a>
+<a href="h125-ec130.html">H125 / EC130<span class="month-count">24 listings</span></a>
+<a href="bell-407.html">Bell 407<span class="month-count">22 listings</span></a>
+<a href="h135-ec135.html">H135 / EC135<span class="month-count">19 listings</span></a>
+<a href="h130.html">H130<span class="month-count">14 listings</span></a>
+<a href="uh-60-black-hawk.html">UH-60 Black Hawk<span class="month-count">9 listings</span></a>
+<a href="g2-cabri.html">G2 Cabri<span class="month-count">9 listings</span></a>
+<a href="r22.html">R22<span class="month-count">7 listings</span></a>
+<a href="as355-twin-squirrel.html">AS355 Twin Squirrel<span class="month-count">5 listings</span></a>
+<a href="as332-super-puma.html">AS332 Super Puma<span class="month-count">5 listings</span></a>
+<a href="bell-212.html">Bell 212<span class="month-count">5 listings</span></a>
+<a href="bell-429.html">Bell 429<span class="month-count">5 listings</span></a>
+<a href="md500-md520.html">MD500 / MD520<span class="month-count">4 listings</span></a>
+<a href="aw189.html">AW189<span class="month-count">3 listings</span></a>
+<a href="ah-64-apache.html">AH-64 Apache<span class="month-count">3 listings</span></a>
+<a href="ch-47-chinook.html">CH-47 Chinook<span class="month-count">3 listings</span></a>
+<a href="aw169.html">AW169<span class="month-count">2 listings</span></a>
+<a href="s-92.html">S-92<span class="month-count">2 listings</span></a>
+<a href="bell-205.html">Bell 205<span class="month-count">2 listings</span></a>
+<a href="other-aircraft-types.html">Other Aircraft Types<span class="month-count">7 listings</span></a>
+</div>
+
+</main>
+
+<footer>
+  Helicopter Pilot Jobs is a job listing information service only and is not affiliated with, and does not recruit or accept applications on behalf of, any company listed here. Apply directly using the contact details shown on each listing.
+  <br><a href="../feed.xml">RSS feed</a>
+</footer>
+
+<script src="../counters.js"></script>
+<script>
+(function(){
+  var hash = decodeURIComponent((window.location.hash || "").replace("#",""));
+  if (!hash) return;
+  var target = document.getElementById(hash);
+  if (!target || !target.classList.contains("job-card")) return;
+  document.querySelectorAll(".job-card").forEach(function(el){
+    if (el !== target) el.style.display = "none";
+  });
+  var note = document.createElement("p");
+  note.style.margin = "18px 0 0";
+  note.innerHTML = '<a href="' + window.location.pathname + '">&larr; View all listings on this page</a>';
+  target.insertAdjacentElement("afterend", note);
+  target.scrollIntoView({block: "start"});
+  if (window.jobCounterHit) {
+    window.jobCounterHit(hash, target.querySelector(".view-count-num"));
+  }
+})();
+</script>
+</body>
+</html>
