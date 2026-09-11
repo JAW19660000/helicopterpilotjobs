@@ -374,3 +374,23 @@ footer {
   color: var(--muted);
   font-size: 0.82rem;
 }
+.badge-new {
+  display: inline-block;
+  background: #fdf3ea;
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+.badge-closing {
+  display: inline-block;
+  background: #fceceb;
+  color: #b3261e;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+}
